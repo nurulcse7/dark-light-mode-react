@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 
 const DarkMode = () => {
+    const [theme, setTheme] = useState('light-theme')
+  const toggleTheme = () => {};
+
+  useEffect(() => {}, []);
+
   return (
     <>
       <header>
@@ -27,6 +33,13 @@ const DarkMode = () => {
                 possimus, reprehenderit saepe sapiente autem beatae laboriosam
                 minus iste dolorem? Magnam, laboriosam.
               </p>
+              <button onClick={() => toggleTheme()}>Toggle Mode</button>
+            </div>
+            <div className='hero-section-image'>
+              <img
+                src='https://i.ibb.co/Kq8Ln8p/profile-pic.png'
+                alt='Nurul Islam'
+              />
             </div>
           </div>
         </section>
