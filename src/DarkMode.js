@@ -2,10 +2,20 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 
 const DarkMode = () => {
-    const [theme, setTheme] = useState('light-theme')
-  const toggleTheme = () => {};
+  const [theme, setTheme] = useState('light-theme');
 
-  useEffect(() => {}, []);
+  const toggleTheme = () => {
+    if(theme === 'dark-theme') {
+        setTheme('light-theme')
+    }
+    else {
+        setTheme('dark-theme')
+    }
+  };
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
   return (
     <>

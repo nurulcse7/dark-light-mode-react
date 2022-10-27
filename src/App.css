@@ -39,13 +39,13 @@ p {
 }
 
 a {
+  font-size: large;
   cursor: pointer;
   text-decoration: none;
 }
 
 a li {
   font-size: 1.8rem;
-  color: var(--btn-bg-color);
 }
 
 .btn {
@@ -60,8 +60,7 @@ section {
 }
 
 .container {
-  max-width: 140rem;
-  margin: 0 auto;
+  padding: 25px;
 }
 
 .grid {
@@ -80,14 +79,15 @@ header {
   background-color: var(--bg-color);
 }
 
-header nav ul{
+header nav ul {
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
 }
 
-header nav li{
+header nav li {
   list-style: none;
 }
 
@@ -102,12 +102,12 @@ header nav li{
   margin: 2rem 0;
 }
 
-.hero-section-image{
+.hero-section-image {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
-..hero-section-image img {
+.hero-section-image img {
   max-height: 60%;
 }
